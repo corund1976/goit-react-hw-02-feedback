@@ -1,0 +1,11 @@
+.buttonsListItem:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button {
+  background-color: lightblue;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
