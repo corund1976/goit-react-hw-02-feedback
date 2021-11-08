@@ -13,6 +13,7 @@ class App extends Component {
     bad: 0,
   };
 
+  // stateUpdate = ({target:{name}}) => {
   stateUpdate = event => {
     // const currentFeedback = event.target.name;
     
@@ -27,6 +28,8 @@ class App extends Component {
   countTotalFeedback = () => {
     return (Object.values(this.state).reduce((acc, item) => acc + item));
   };
+  // countTotalFeedback = () => 
+  //   (Object.values(this.state).reduce((acc, item) => acc + item));
 
   countPositiveFeedbackPercentage = () => {
     return (parseInt(this.state.good / this.countTotalFeedback() * 100));

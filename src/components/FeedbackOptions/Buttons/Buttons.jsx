@@ -11,6 +11,9 @@ function Buttons({ options, onLeaveFeedback }) {
           name={item}
           onClick={onLeaveFeedback}>
           {item.charAt(0).toUpperCase() + item.slice(1)}
+          {/* p:first-letter{
+            text-transform:capitalize;
+            } */}
         </button>
       </li>
     )
